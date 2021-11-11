@@ -1,5 +1,4 @@
-// eslint-disable-next-line no-undef
-importScripts('https://unpkg.com/regenerator-runtime@0.13.7/runtime.js');
+import 'regenerator-runtime';
 
 // eslint-disable-next-line import/no-extraneous-dependencies, import/first
 import { precacheAndRoute } from 'workbox-precaching';
