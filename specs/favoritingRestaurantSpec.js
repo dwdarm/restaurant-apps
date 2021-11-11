@@ -21,7 +21,7 @@ describe('Favoriting A Restaurant', () => {
   
   it('should show the favorite button when the restaurant has not been favorited before', (done) => {
     const onReady = async () => {
-      expect(document.querySelector('.fa-heart-o')).toBeTruthy();
+      expect(document.querySelector('[aria-label="favorite this restaurant"]')).toBeTruthy();
       done();
     }
     
@@ -36,7 +36,7 @@ describe('Favoriting A Restaurant', () => {
   
   it('should show the unfavorite button when the restaurant has been favorited before', async () => {
     const onReady = async () => {
-      expect(document.querySelector('.fa-heart')).toBeTruthy();
+      expect(document.querySelector('[aria-label="unfavorite this restaurant"]')).toBeTruthy();
     }
     
     await FavoriteRestaurantIdb.putRestaurant({ id: 1 });

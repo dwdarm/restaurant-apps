@@ -55,7 +55,7 @@ class NavBar extends HTMLElement {
             </div>
           </div>
           <a class="navbar-burger open-search" aria-label="SearchButton" href="#">
-            <i class="fa fa-search"></i>
+            <span><i class="fas fa-search"></i></span>
           </a>
           <div class="navbar-menu-end">
             <a class="navbar-item navbar-link" href="/">Home</a>

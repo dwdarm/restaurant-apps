@@ -16,6 +16,10 @@
   display: inline;
 }
 
+.is-inline-block {
+  display: inline-block;
+}
+
 .is-flex {
   display: flex;
 }
@@ -47,6 +51,10 @@
 
 .is-min-full-height {
   min-height: 100vh;
+}
+
+.is-borderless {
+  border: none;
 }
 
 

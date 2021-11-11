@@ -6,29 +6,14 @@ class MenuList extends HTMLElement {
 
   async render() {
     this.innerHTML = `
-      <ul class="fa-ul">
-        <li>
-          <span class="has-text-danger-color"><i class="fa-li fa fa-spoon"></i></span>
-          Foods
-          <ul class="fa-ul menu-food-list"></ul>
-        </li>
-        <li>
-          <span class="has-text-danger-color"><i class="fa-li fa fa-glass"></i></span>
-          Drinks
-          <ul class="fa-ul menu-drink-list"></ul>
-        </li>
-      </ul>
-    `;
-
-    this.innerHTML = `
       <div class="cols">
         <div class="col">
-          <span class="has-text-danger-color"><i class="fa fa-spoon"></i></span>
+          <span class="has-text-danger-color"><i class="fas fa-utensils"></i></span>
           Foods
           <ul class="fa-ul menu-food-list"></ul>
         </div>
         <div class="col">
-          <span class="has-text-danger-color"><i class="fa fa-glass"></i></span>
+          <span class="has-text-danger-color"><i class="fas fa-coffee"></i></span>
           Drinks
           <ul class="fa-ul menu-drink-list"></ul>
         </div>

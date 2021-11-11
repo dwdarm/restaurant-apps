@@ -13,8 +13,8 @@ class LikeButton extends HTMLElement {
 
   render() {
     this.innerHTML = `
-      <button aria-label="favorite this restaurant" class="favorite-restaurant-button fixed-button">
-        <i class="fa ${this._isLiked ? 'fa-heart' : 'fa-heart-o'}" aria-hidden="true"></i>
+      <button aria-label="${this._isLiked ? 'unfavorite this restaurant' : 'favorite this restaurant'}" class="favorite-restaurant-button fixed-button">
+        <i class="${this._isLiked ? 'fas fa-heart' : 'far fa-heart'}" aria-hidden="true"></i>
       </button>
     `;
 

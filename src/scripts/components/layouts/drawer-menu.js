@@ -29,8 +29,8 @@ class DrawerMenu extends HTMLElement {
     this.innerHTML = `
       <nav class="drawer is-drawer-open">
         <div class="is-flex is-justify-content-end">
-          <button class="close-drawer-button" aria-label="close-drawer-button">
-            <i class="fa fa-close fa-lg"></i>
+          <button class="button close-drawer-button has-bg-gray is-borderless mb-2" aria-label="close-drawer-button">
+            <i class="fa-lg far fa-times-circle"></i>
           </button>
         </div>
         <div class="menu">
