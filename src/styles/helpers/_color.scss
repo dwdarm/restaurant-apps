@@ -1,0 +1,33 @@
+@charset 'utf-8';
+
+.has-text-primary-color {
+  color: $primary-color;
+}
+
+.has-text-white-color {
+  color: $white-color;
+}
+
+.has-text-warning-color {
+  color: $warning-color;
+}
+
+.has-text-danger-color {
+  color: $danger-color;
+}
+
+.has-text-success-color {
+  color: $success-color;
+}
+
+.has-bg-black {
+  background-color: $black-color;
+}
+
+.has-bg-info {
+  background-color: $info-color;
+}
+
+.has-bg-gray {
+  background-color: $gray-color;
+}

@@ -1,0 +1,81 @@
+@charset 'utf-8';
+@use 'sass:math';
+
+$cols-gap: 0.75rem;
+
+.cols {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  
+  &.is-center {
+    justify-content: center;
+  }
+  
+  &.is-vcenter {
+    align-items: center;
+  }
+  
+  &.is-reverse {
+    flex-wrap: wrap-reverse;
+  }
+  
+  &.is-fluid {
+    flex-wrap: nowrap;
+  }
+  
+}
+
+.col {
+  flex-grow: 1;
+  padding: $cols-gap;
+  
+  &.is-gapless {
+    padding: 0;
+  }
+}
+
+@for $i from 1 through 12 {
+  .is-#{$i} {
+    flex-grow: 0;
+    flex-basis: math.percentage(math.div($i, 12));
+  }
+}
+
+.is-multiline {
+  flex-wrap: wrap;
+}
+
+.is-narrow {
+  flex-grow: 0;
+}
+
+@media screen and (min-width: $small) {
+  .cols {
+    flex-direction: row;
+  }
+  @for $i from 1 through 12 {
+    .is-#{$i}-small {
+      flex-grow: 0;
+      flex-basis: math.percentage(math.div($i, 12));
+    }
+  }
+}
+
+@media screen and (min-width: $medium) {
+  @for $i from 1 through 12 {
+    .is-#{$i}-medium {
+      flex-grow: 0;
+      flex-basis: math.percentage(math.div($i, 12));
+    }
+  }
+}
+
+@media screen and (min-width: $large) {
+  @for $i from 1 through 12 {
+    .is-#{$i}-large {
+      flex-grow: 0;
+      flex-basis: math.percentage(math.div($i, 12));
+    }
+  }
+}

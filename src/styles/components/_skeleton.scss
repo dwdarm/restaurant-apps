@@ -1,0 +1,31 @@
+@charset 'utf-8';
+
+$skeleton-color: hsl(0, 0%, 86%);
+
+.skeleton {
+  position: relative;
+  background-color: #e2e2e2;
+  overflow: hidden;
+}
+
+.skeleton::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  content: "";
+  background: -webkit-gradient(linear, left top, right top, from(transparent), 
+                               color-stop(rgba(255, 255, 255, 0.2)),
+                               to(transparent));
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transform: translateX(-100%);
+  animation: animate 0.8s infinite;
+}
+
+@keyframes animate {
+  to {
+    transform: translateX(100%);
+  }
+}

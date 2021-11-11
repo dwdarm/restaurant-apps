@@ -1,0 +1,14 @@
+@charset 'utf-8';
+
+.card {
+  width: 100%;
+  
+  .card-header {
+    position: relative;
+    width: 100%;
+  }
+  
+  .card-body {
+    padding: 1rem 0;
+  }
+}

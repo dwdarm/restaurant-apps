@@ -1,0 +1,52 @@
+@charset 'utf-8';
+
+.is-absolute {
+  position: absolute;
+}
+
+.is-relative {
+  position: relative;
+}
+
+.is-block {
+  display: block;
+}
+
+.is-inline {
+  display: inline;
+}
+
+.is-flex {
+  display: flex;
+}
+
+.is-justify-content-end {
+  justify-content: flex-end;
+}
+
+.is-flex-col {
+  flex-direction: column;
+}
+
+.is-flex-1 {
+  flex: 1 1 auto;
+}
+
+.is-flex-centered {
+  align-items: center;
+  justify-content: center;
+}
+
+.is-full-width {
+  width: 100%;
+}
+
+.is-full-height {
+  height: 100vh;
+}
+
+.is-min-full-height {
+  min-height: 100vh;
+}
+
+

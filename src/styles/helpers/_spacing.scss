@@ -1,0 +1,72 @@
+@charset 'utf-8';
+
+$spacing-multiplier: 0.25rem;
+
+.mx-auto {
+  margin: 0 auto;
+}
+
+@for $i from 1 through 12 {
+  
+  .p-#{$i} {
+    padding: $i * $spacing-multiplier;
+  }
+  
+  .px-#{$i} {
+    padding-left: $i * $spacing-multiplier;
+    padding-right: $i * $spacing-multiplier;
+  }
+  
+  .py-#{$i} {
+    padding-top: $i * $spacing-multiplier;
+    padding-bottom: $i * $spacing-multiplier;
+  }
+  
+  .pt-#{$i} {
+    padding-top: $i * $spacing-multiplier;
+  }
+  
+  .pb-#{$i} {
+    padding-bottom: $i * $spacing-multiplier;
+  }
+  
+  .pr-#{$i} {
+    padding-right: $i * $spacing-multiplier;
+  }
+  
+  .pl-#{$i} {
+    padding-left: $i * $spacing-multiplier;
+  }
+  
+  .m-#{$i} {
+    margin: $i * $spacing-multiplier;
+  }
+  
+  .mx-#{$i} {
+    margin-left: $i * $spacing-multiplier;
+    margin-right: $i * $spacing-multiplier;
+  }
+  
+  .my-#{$i} {
+    margin-top: $i * $spacing-multiplier;
+    margin-bottom: $i * $spacing-multiplier;
+  }
+  
+  .mt-#{$i} {
+    margin-top: $i * $spacing-multiplier;
+  }
+  
+  .mb-#{$i} {
+    margin-bottom: $i * $spacing-multiplier;
+  }
+  
+  .mr-#{$i} {
+    margin-right: $i * $spacing-multiplier;
+  }
+  
+  .ml-#{$i} {
+    margin-left: $i * $spacing-multiplier;
+  }
+  
+}
+

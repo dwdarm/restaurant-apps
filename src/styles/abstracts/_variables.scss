@@ -1,0 +1,24 @@
+@charset 'utf-8';
+
+/* breakpoints */
+$small: 576px;
+$medium: 768px;
+$large: 992px;
+$xlarge: 1200px;
+
+/* colors */
+$primary-color: rgb(75, 85, 99);
+$black-color: hsl(0, 0%, 4%);
+$white-color: hsl(0, 0%, 98%);
+$info-color: #ddeac1;
+$success-color: hsl(141, 71%, 48%);
+$warning-color: hsl(48, 100%, 67%);
+$danger-color: hsl(348, 100%, 61%);
+$gray-color: rgb(249, 250, 251);
+
+$text-color: $black-color;
+$link-color: $black-color;
+$link-hover-color:$black-color;
+
+/* typography */
+$font-size-normal: 1rem; 

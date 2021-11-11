@@ -1,0 +1,23 @@
+@charset 'utf-8';
+
+.menu {
+
+  width: 100%;
+  
+  .menu-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 1.25rem;
+    min-width: 44px;
+    min-height: 44px;
+    color: $text-color;
+    
+    &:hover {
+      color: $white-color;
+      background-color: $black-color;
+    }
+    
+  }
+  
+}

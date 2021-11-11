@@ -1,0 +1,137 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+
+$fa-font-path: "~fontawesome-4.7/fonts";
+@import "~fontawesome-4.7/scss/font-awesome.scss";
+
+@import './abstracts/all';
+@import './layout/all';
+@import './components/all';
+@import './helpers/all';
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: $white-color;
+  color: $black-color;
+}
+
+a {
+  color: $text-color;
+  text-decoration: none;
+  
+  &:hover {
+    color: $primary-color;
+  }
+}
+
+p {
+  line-height: 1.5rem;
+}
+
+button {
+  min-width: 44px;
+  min-height: 44px;
+}
+
+ul {
+  padding-inline-start: 1.5rem;
+}
+
+.hero {
+  height: 400px;
+}
+
+.hero::before {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  content: "";
+  background: url('../public/images/heros/hero-image_2.jpg?size=576');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+}
+
+@media screen and (min-width: $small) {
+  .hero::before {
+    background: url('../public/images/heros/hero-image_2.jpg?size=768');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (min-width: $medium) {
+  .hero::before {
+    background: url('../public/images/heros/hero-image_2.jpg?size=992');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (min-width: $large) {
+  .hero::before {
+    background: url('../public/images/heros/hero-image_2.jpg?size=1200');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.skip-link {
+  position: absolute;
+  min-width: 44px;
+  min-height: 44px;
+  top: -45px;
+  left: 0;
+  padding: 8px;
+  z-index: 1500;
+  background-color: $warning-color;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+.restaurant-item-image {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  padding-top: 66.667%;
+  overflow: hidden;
+  background-color: #e2e2e2;
+  background-size: cover;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 44px;
+  min-height: 44px;
+}
+
+.restaurant-item-header-skeleton {
+  width: 100%;
+  padding-top: 66.667%;
+}
+
+.restaurant-item-text-skeleton {
+  width: 100%;
+  height: 1rem;
+}
